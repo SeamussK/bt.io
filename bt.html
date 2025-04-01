@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ Sinh Viên</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .student-card {
+            width: 300px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .student-card::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background: #007bff;
+            border-radius: 50%;
+        }
+
+        .student-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .student-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .student-card p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .barcode {
+            margin-top: 15px;
+            height: 30px;
+            background: linear-gradient(90deg, #000 10%, transparent 10%);
+            background-size: 10px 100%;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="student-card">
+        <img src="/avt.jpg" alt="Ảnh Sinh Viên">
+        <h2>Trương Gia Kiệt</h2>
+        <p><strong>MSSV:</strong> 2180600737</p>
+        <p><strong>Lớp:</strong> CNTT-K121</p>
+        <p><strong>Trường:</strong> Đại học Hutech</p>
+        <div class="barcode"></div>
+    </div>
+</body>
+</html>
